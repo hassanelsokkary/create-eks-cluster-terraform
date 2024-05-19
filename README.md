@@ -2,7 +2,7 @@
 Terraform code to create an EKS cluster.
 
 # Usage
-1- Export AWS access key id and secret key: <br/>
+1- Export your AWS access key id and secret key as this example: <br/>
 >     $ export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
 >     $ export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
   or add them to providers.tf file. <br/>
