@@ -1,5 +1,5 @@
 # create-eks-cluster-terraform
-Terraform code to create an EKS cluster.
+Terraform code to create an EKS cluster on AWS.
 
 # Usage
 1- Export your AWS access key id and secret key as this example: <br/>
@@ -17,4 +17,7 @@ Terraform code to create an EKS cluster.
 
 4- Execute 'terraform plan' to check resources to be provisioned. <br/>
 
-5- Execute 'terraform apply' to apply and create EKS cluster.
+5- Execute 'terraform apply' to apply and create EKS cluster. <br/>
+
+6- To generate kubeconfig at ~/.kube/config, execute:
+>      aws eks --region region-code update-kubeconfig --name cluster_name
