@@ -25,7 +25,7 @@ module "vpc" {
 resource "aws_iam_role" "eks-role" {
   name = "eks-cluster-role"
   tags = {
-    tag-key = "eks-cluster-group-5-role"
+    tag-key = "eks-cluster-role"
   }
 
   assume_role_policy = <<POLICY
@@ -72,7 +72,7 @@ module "eks" {
   control_plane_subnet_ids = module.vpc.public_subnets
 
   access_entries = {
-    group5 = {
+    user1 = {
         kubernetes_group  = []
         principal_arn     = "###### USER ARN to authorize in Cluster#########"
 
