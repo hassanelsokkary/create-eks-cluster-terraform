@@ -11,7 +11,7 @@ Terraform code to create an EKS cluster on AWS.
 2- Set your region in providers.tf file.
 
 3- Add AWS user's ARN in main.tf to authorize 'kubectl' command admin access: <br/>
->      principal_arn     = "###### USER ARN to authorize in Cluster#########" <br/>
+>      principal_arn     = "###### USER ARN to authorize in Cluster######" <br/>
       
 3- Execute 'terraform init' to initialize directory.<br/>
 
